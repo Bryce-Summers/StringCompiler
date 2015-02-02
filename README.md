@@ -18,6 +18,7 @@ I have two perfectly working example and a predicate logic example that has two 
 
 There are still probably many bugs floating around. This project is by no means done yet.
 
+#A Liscense that I am trying out.
 
 The MIT License (MIT)
 
