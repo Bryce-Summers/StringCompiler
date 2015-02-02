@@ -22,7 +22,7 @@ There are still probably many bugs floating around. This project is by no means 
 
 The MIT License (MIT)
 
-Copyright (c) [2015] [Bryce Summers]
+Copyright (c) 2015 Bryce Summers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
