@@ -2,7 +2,7 @@
 A general translation library that allows the programmer to specify a grammar of type and inference rules.
 
 #Author
-Bryce Summers is the author of this code. Many great computer scientists, mathematiscians, computer engineers, and programmers as well as many other people probably created technology such as the invention of the computer that I used in the proccess.
+Bryce Summers is the author of this code. Many great computer scientists, mathematician, computer engineers, and programmers as well as many other people probably created technology such as the invention of the computer that I used in the proccess.
 
 #Inspiration
 I was inspired to write this software while taking a course on logic, Undecidability, and Incompleteness.
