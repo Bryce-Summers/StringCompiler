@@ -18,6 +18,43 @@ I have two perfectly working example and a predicate logic example that has two 
 
 There are still probably many bugs floating around. This project is by no means done yet.
 
+#Usage
+
+You can find several example programs using the String compiler in the src/examples/ folder. In particular, please look at the predicate logic example that attempts to parse all of predicate logic.
+
+Here is a very simple example (which can also be found in the example folder) of using this program to implement a duplication rule that appends a copy of the input string to itself.
+```
+
+// Notes: 'Types' are well defined expressions that can be parsed and formally constructed from subsets of an input string.
+//  - Rules are formalized descriptions of how to map one formally constructed type to another. 
+//    For a given type it may be constructed as a formal translation of input data into a new form based on rules.
+//  - Matchers are pattern matching expressions used in the formal description of a types.
+//  - Derivers parse an input string into a single type, the power of this is that the given derived type can be specified with a 
+//    formal construction from other types, so relevant transformations of the input data can be defined for specific syntactic
+//    locations and patterns within the input string.
+//    Beware of ambiguous grammars!!!
+
+// Create a Universal Type that matches anything.
+Type S = new type_List(Matcher.ALL);
+
+// S --> SS
+Rule rule_duplicate = new Rule(Rule.P(S), Rule.P(S, S));
+Type type_duplicate = new Type(rule_duplicate);
+
+String output;
+output = Deriver.derive("Bryce Summers ", type_duplicate);
+println(output);// prints "Bryce Summers Bryce Summers"
+		
+output = Deriver.derive("has ", type_duplicate);
+println(output);// prints "has has "
+		
+output = Deriver.derive("achieved ", type_duplicate);
+println(output);//prints "achieved achieved "
+		
+output = Deriver.derive("duplication ", type_duplicate);
+println(output);// prints "duplication duplication "
+```
+
 #A Liscense that I am trying out.
 
 The MIT License (MIT)
